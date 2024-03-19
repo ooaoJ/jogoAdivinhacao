@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(97, 96, 96);
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-title {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.main-image {
+    width: 50px;
+}
+
+main {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-options {
+    margin-top: 20px;
+    width: 20vw;
+    text-align: center;
+    background: none;
+    color: rgb(255, 254, 254);
+    font-size: 18px;
+    height: 45px;
+    background-color: rgba(180, 180, 180, 0.462);
+    border-radius: 5px;
+}
+
+#send-dificulty {
+    margin-top: 20px;
+    width: 20vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(180, 180, 180, 0.462);
+    ;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+#send-dificulty:hover {
+    background-color: rgba(180, 180, 180, 0.658);
+}
+
+#send-dificulty:active {
+    background-color: #ffffffa5;
+}
+
+.desc-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-dificulty {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.196);
+    height: 50vh;
+    border: 5px solid;
+    border-radius: 10px;
+    animation: borderAnimation 4s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    14% {
+        border-color: orange;
+    }
+
+    28% {
+        border-color: yellow;
+    }
+
+    42% {
+        border-color: rgb(0, 211, 0);
+    }
+
+    56% {
+        border-color: rgb(0, 183, 255)
+    }
+
+    70% {
+        border-color: rgb(65, 65, 240)
+    }
+
+    86% {
+        border-color: rgb(183, 8, 183)
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+.text-easy,
+.text-medium,
+.text-hard{
+    width: 20vw;
+}
+
+

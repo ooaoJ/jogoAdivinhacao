@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="main-image" src="idea.png" alt="Imagem de uma lampada">
+        <h1 class="main-title">Jogo de Adivinhação</h1>
+        <img class="main-image" src="idea.png" alt="Imagem de uma lampada">
+
+    </header>
+    <main>
+        <div class="desc-game">
+            <h2>DESCRIÇÃO DO JOGO</h1>
+                <p>Nesse jogo, você terá a opção de escolher a dificuldade, que dita o número de chances que você terá,
+                    alem do quão grande vai ser a distância do número aleatório até 0. Divirta-se e tente provar para
+                    todos o quão bom você é em adivinhar as coisas!</p>
+        </div>
+
+        <div class="text-dificulty">
+            <div class="text-easy">
+                <h1>MODO FÁCIL 🤗</h1>
+                <ul>
+                    <li>O usuário terá 6 chances de acertar o número;</li>
+                    <li>O número vai variar entre 0 e 15;</li>
+                    <li>Será informado ao usuário, se sua tentativa está perto ou não do número sorteado.</li>
+                    <li>Modo recomendado para iniciantes.</li>
+                </ul>
+            </div>
+            <div class="text-medium">
+                <h1>MODO MÉDIO 😎</h1>
+                <ul>
+                    <li>O usuário terá 4 chances de acertar o número;</li>
+                    <li>O número vai variar entre 0 e 30;</li>
+                    <li>Será informado ao usuário, se sua tentativa está perto ou não do número sorteado.</li>
+                    <li>Modo recomendado para aqueles que gostam de um leve desafio!</li>
+                </ul>
+            </div>
+            <div class="text-hard">
+                <h1>MODO DIFÍCIL 👽</h1>
+                <ul>
+                    <li>O usuário terá 2 chances de acertar o número;</li>
+                    <li>O número vai variar entre 0 e 50;</li>
+                    <li>Não será informado ao usuário, se sua tentativa está perto ou não do número sorteado.</li>
+                    <li>Modo recomendado para aqueles que não tem nada a perder!!!</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Escolha a dificuldade do seu jogo!</h2>
+        <select id="game-options">
+            <option value="facil" id="easy-option">Dificuldade Fácil</option>
+            <option value="medio" id="medium-option">Dificuldade Média</option>
+            <option value="dificil" id="hard-option">Dificuldade Difícil</option>
+        </select>
+        <button id="send-dificulty" onclick="sendDificulty()">Enviar escolha</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
