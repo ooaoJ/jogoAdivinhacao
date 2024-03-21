@@ -54,13 +54,66 @@
         </div>
         <h2>Escolha a dificuldade do seu jogo!</h2>
         <select id="game-options">
-            <option value="facil" id="easy-option">Dificuldade Fácil</option>
-            <option value="medio" id="medium-option">Dificuldade Média</option>
-            <option value="dificil" id="hard-option">Dificuldade Difícil</option>
+            <option value="f" id="easy-option">Dificuldade Fácil</option>
+            <option value="m" id="medium-option">Dificuldade Média</option>
+            <option value="d" id="hard-option">Dificuldade Difícil</option>
         </select>
-        <button id="send-dificulty" onclick="sendDificulty()">Enviar escolha</button>
+        <button id="send-dificulty" onclick="show()">Enviar escolha</button>
+
+        <section id="game">
+            <div id="game-easy">
+                <div class="game-easy-content">
+                    <h1>MODO FÁCIL</h1>
+                    <div class="game-easy-card">
+                        <h2 id="visualNum">O número é: ???</h2>
+                        <h3 class="easy-chance" id="visualChance">Chances restantes: ???</h3>
+                        <input type="text" placeholder="Seu número aqui" class="user-try">
+                        <div class="game-easy-card-buttons">
+                            <button id="easy-send">Enviar</button>
+                            <button id="easy-quit">Desistir</button>
+                        </div>
+                        <h2 id="more-less"></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game-medium">
+                <div class="game-medium-content">
+                    <h1>MODO MÉDIO</h1>
+                    <div class="game-medium-card">
+                        <h2 id="visualNum">O número é: ???</h2>
+                        <h3 class="medium-chance" id="visualChance">Chances restantes: ???</h3>
+                        <input type="text" placeholder="Seu número aqui" class="user-try">
+                        <div class="game-medium-card-buttons">
+                            <button id="medium-send">Enviar</button>
+                            <button id="medium-quit">Desistir</button>
+                        </div>
+                        <h2 id="more-less"></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="game-hard">
+                <div class="game-hard-content">
+                    <h1>MODO DIFÍCIL</h1>
+                    <div class="game-hard-card">
+                        <h2 id="visualNum">O número é: ???</h2>
+                        <h3 class="hard-chance" id="visualChance">Chances restantes: ???</h3>
+                        <input type="text" placeholder="Seu número aqui" class="user-try">
+                        <div class="game-hard-card-buttons">
+                            <button id="hard-send">Enviar</button>
+                            <button id="hard-quit">Desistir</button>
+                        </div>
+                        <h2 id="more-less"></h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
     </main>
-    <script src="script.js"></script>
+    <script src="modeSelect.js"></script>
+    <script src="game.js"></script>
 </body>
 
 </html>
