@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -98,6 +99,83 @@ option {
     animation: borderAnimation 4s linear infinite;
 }
 
+.text-easy,
+.text-medium,
+.text-hard {
+    width: 20vw;
+}
+
+#game{
+    margin-top: 50px;
+}
+
+#game-easy,
+#game-medium,
+#game-hard {
+    display: none;
+    height: auto;
+}
+
+.game-easy-content,
+.game-medium-content,
+.game-hard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-easy-card,
+.game-medium-card,
+.game-hard-card {
+    background-color: rgba(168, 168, 168, 0.371);
+    width: 60vw;
+    height: 80vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 20px;
+    border: 5px solid;
+    animation: borderAnimation 4s linear infinite;
+}
+
+.user-try {
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    border: none;
+}
+
+.easy-title,
+.medium-title,
+.hard-title {
+    font-size: 28px;
+}
+
+.game-easy-content input,
+.game-medium-content input,
+.game-hard-content input {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+#easy-send,
+#easy-quit,
+#medium-send,
+#medium-quit,
+#hard-send,
+#hard-quit {
+    width: 12vw;
+    height: 8vh;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+}
+
 @keyframes borderAnimation {
     0% {
         border-color: red;
@@ -130,10 +208,4 @@ option {
     100% {
         border-color: red;
     }
-}
-
-.text-easy,
-.text-medium,
-.text-hard {
-    width: 20vw;
 }
