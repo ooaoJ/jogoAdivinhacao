@@ -31,7 +31,3 @@ function show() {
             console.log('Escolha inválida.')
     }
 }
-
-//gameEasyDiv.scrollIntoView({behavior: 'smooth', block: 'start'})
-//gameMediumDiv.scrollIntoView({behavior: 'smooth', block: 'start'})
-//gameHardDiv.scrollIntoView({behavior: 'smooth', block: 'start'})
