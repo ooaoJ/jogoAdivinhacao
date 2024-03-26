@@ -66,11 +66,11 @@
                     <h1>MODO FÁCIL</h1>
                     <div class="game-easy-card">
                         <h2 id="visualNum">O número é: ???</h2>
-                        <h3 class="easy-chance" id="visualChance">Chances restantes: ???</h3>
+                        <h3 class="easy-chance" id="visualChance">Chances restantes: 6</h3>
                         <input type="text" placeholder="Seu número aqui" class="user-try">
                         <div class="game-easy-card-buttons">
                             <button id="easy-send">Enviar</button>
-                            <button id="easy-quit">Desistir</button>
+                            <button id="easy-quit" onclick="desist()">Desistir</button>
                         </div>
                         <h2 id="more-less"></h2>
                     </div>
@@ -82,11 +82,11 @@
                     <h1>MODO MÉDIO</h1>
                     <div class="game-medium-card">
                         <h2 id="visualNum">O número é: ???</h2>
-                        <h3 class="medium-chance" id="visualChance">Chances restantes: ???</h3>
+                        <h3 class="medium-chance" id="visualChance">Chances restantes: 4</h3>
                         <input type="text" placeholder="Seu número aqui" class="user-try">
                         <div class="game-medium-card-buttons">
                             <button id="medium-send">Enviar</button>
-                            <button id="medium-quit">Desistir</button>
+                            <button id="medium-quit" onclick="desist()">Desistir</button>
                         </div>
                         <h2 id="more-less"></h2>
                     </div>
@@ -97,11 +97,11 @@
                     <h1>MODO DIFÍCIL</h1>
                     <div class="game-hard-card">
                         <h2 id="visualNum">O número é: ???</h2>
-                        <h3 class="hard-chance" id="visualChance">Chances restantes: ???</h3>
+                        <h3 class="hard-chance" id="visualChance">Chances restantes: 2</h3>
                         <input type="text" placeholder="Seu número aqui" class="user-try">
                         <div class="game-hard-card-buttons">
                             <button id="hard-send">Enviar</button>
-                            <button id="hard-quit">Desistir</button>
+                            <button id="hard-quit" onclick="desist()">Desistir</button>
                         </div>
                         <h2 id="more-less"></h2>
                     </div>
